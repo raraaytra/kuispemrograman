@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuis Pemrograman Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="login-screen">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Masukkan Nama"><br><br>
+      <button onclick="startQuiz()">Mulai Kuis</button>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+      <div id="timer">Waktu: 05:00</div>
+      <div id="question-number"></div>
+      <div class="question" id="question-text"></div>
+      <div id="options"></div>
+      <button onclick="nextQuestion()" id="next-btn" disabled>Lanjut</button>
+      <div class="score-board" id="score"></div>
+      <div class="score-board" id="explanation"></div>
+      <button onclick="restartQuiz()" class="hidden" id="restart-btn">Ulangi Kuis</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
